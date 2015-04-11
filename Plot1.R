@@ -13,6 +13,7 @@ epcsubset$Global_active_power <-
     as.numeric(levels(epcsubset$Global_active_power))[epcsubset$Global_active_power]
 
 ## open a graphic device , set output file to Plot1.png
+## default height 480 and width 480
 png("Plot1.png")
 hist(epcsubset$Global_active_power,col = 'red',main = "Global Active Power",
      ,xlab = "Global Active Power(kilowatts)")
